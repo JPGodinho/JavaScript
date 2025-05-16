@@ -12,7 +12,7 @@ const inputAssunto = document.getElementById('assunto')
 const inputMensagem = document.getElementById('mensagem')
 const btnEnviar = document.getElementById('btnEnviar')
 const mensagemErro = document.getElementById('mensagemErro')
-const cadastroUsuarios = document.getElementById('cadastro')
+const cadastro = document.getElementById('cadastro')
 
 btnEnviar.addEventListener("click", function (event){
     event.preventDefault()
@@ -38,5 +38,6 @@ btnEnviar.addEventListener("click", function (event){
     <h3> Mensagem: ${mensagem} </h3>
     `
 
+    cadastro.append(cardusuario)
     form.reset()
 })
